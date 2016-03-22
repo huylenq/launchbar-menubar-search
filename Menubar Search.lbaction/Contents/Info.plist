@@ -31,7 +31,7 @@
 		<key>LBTwitter</key>
 		<string>@jordicl</string>
 		<key>LBWebsite</key>
-		<string></string>
+		<string>https://github.com/jordicl/launchbar-menubar-search</string>
 	</dict>
 	<key>LBResult</key>
 	<string>List of menu bar items including shortcuts</string>
