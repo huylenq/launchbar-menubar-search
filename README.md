@@ -3,7 +3,7 @@ Launchbar action for quick access to the menubar. Based on the Alfred workflow
 from Ted Wise: [Menubar Search](http://www.alfredforum.com/topic/1993-menu-search).
 
 ##Requirements
-Support for assisted device must be enabled and allowed. On OSX El Capitan (10.11)
+Support for assisted device must be enabled and allowed. On OSX El Capitan (10.11) and later
 this is done in the System preferences -> Security & Privacy -> Accessibility.
 
 ##Screenshot

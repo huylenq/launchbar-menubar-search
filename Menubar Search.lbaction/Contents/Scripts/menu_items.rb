@@ -59,9 +59,9 @@ module MenuItems
       if item[:shortcut].empty?
         name = item[:name]
       else
-        name = "#{item[:name]}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t#{item[:shortcut]}"
+        name = "#{item[:name]}"
       end
-      feedback.add_item({:title => name, :arg => item[:line], :uid => "#{application}: #{item[:path]} > #{item[:name]}", :subtitle => "#{application}: #{item[:path]}", :icon => icon})
+      feedback.add_item({:title => name, :arg => item[:line], :badge => "#{item[:shortcut]}" ,:uid => "#{application}: #{item[:path]} > #{item[:name]}", :subtitle => "#{application}: #{item[:path]}", :icon => icon})
     end
     if found_items.length == 0
       feedback.add_item({:title => 'No matching menu items found', :arg => ''})
