@@ -38,6 +38,9 @@ class Feedback
       
       REXML::Element.new("title", new_item).text    = item[:title]
       REXML::Element.new("subtitle", new_item).text = item[:subtitle]
+      unless item[:badge].empty?
+        REXML::Element.new("badge", new_item).text = item[:badge]
+      end
       REXML::Element.new("alwaysShowsSubtitle", new_item).text = "true"
       # REXML::Element.new("action", new_item).text = "execute.scpt"
       REXML::Element.new("action", new_item).text = "action.sh"
